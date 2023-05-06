@@ -4,16 +4,6 @@ import csv
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
-print('Connecting to database...')
-# Defines connection configuration to connect to a MySQL database.
-# Define config to hold info to connect 
-config = {
-    'user': 'db2022_01',
-    'password': '6368b59bf17be',
-    'host': 'www.pdbmbook.com',
-    'database': 'db2022_01'
-}
-
 # Tries to connect to the MySQL database and retrieves the data from two tables, "orderitems" and "foods", using a SQL query.
 # Create a connection to the MySQL database
 try:
